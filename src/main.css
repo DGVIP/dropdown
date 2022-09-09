@@ -1,0 +1,118 @@
+@import "antd/dist/antd.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  background-color: darkcyan;
+  display: flex;
+}
+
+.sidebar {
+  width: 100%;
+  height: 100%;
+  max-width: 360px;
+  overflow-y: auto;
+  background-color: lightblue;
+  padding: 8px;
+}
+
+.client-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Client */
+
+.client {
+  border-radius: 4px;
+  border: 1px solid gray;
+  background-color: white;
+}
+
+.client > div {
+  position: unset !important;
+  top: unset !important;
+  left: unset !important;
+}
+
+.client .client-body {
+  position: unset !important;
+  top: unset !important;
+  left: unset !important;
+  min-width: unset !important;
+  z-index: 0;
+}
+
+.client .client-body::before {
+  display: none;
+}
+
+.client-header {
+  cursor: pointer;
+  padding: 8px;
+}
+
+.client-content {
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Assignment */
+
+.assignment {
+  padding: 8px;
+}
+
+.assignment:hover {
+  background-color: rgb(240, 240, 255);
+}
+
+/* Open Req */
+
+.open-req {
+  position: relative;
+}
+
+.open-req-header {
+  cursor: pointer;
+  padding: 8px;
+  border: 1px dashed lightgreen;
+}
+
+.open-req-header:hover {
+  background-color: rgb(240, 255, 240);
+}
+
+.open-req-content {
+  padding: 8px 0;
+  background-color: rgb(240, 255, 240);
+  border: 1px dashed lightgreen;
+}
+
+/* Proposal */
+
+.proposal {
+  padding: 8px;
+}
+
+.proposal:hover {
+  background-color: rgb(220, 255, 220);
+}
